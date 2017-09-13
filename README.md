@@ -1,36 +1,13 @@
-# clj_test
+Для запуска необходимо:
+1) Создать структуру БД описанную в migration.sql
+2) Запустит программу командой lein run.
+3) API доступно по следующим URL's:
+ - Получение статистики: http://localhost:8080/get_state/1
+ - Добавление ставки: http://localhost:8080/accept_bet?unique_number=131&round_number=355132&client_id=1&selected_numbers=[1,2,3,4,5,6]&bet_amount=100
 
-FIXME: description
 
-## Installation
-
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar clj_test-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2017 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+В целом качественно сделать такое задание за два вечера (около 8 часов), вижу не достижимым, возможно если хорошо владеть предметной областью и поработать над схожей задачей, процесс можно значительно ускорить.
+Были реализованы основные задачи - получение статистики, постановка ставки, расчет ставки.
+Реализация большинства функций разумеется была не оптимальной, сделанный быстрым способом, для качественной реализации нужно больше времени.
+Так же необходимо дополнительно обдумать весь процесс синхронизации - получение статистики->постановка ставки->вычисление выигрыша, его надежность.
+Для добавления protobuf необходимо было дополнительное время для прочтения документации по установке и настройке.
