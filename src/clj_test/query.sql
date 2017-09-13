@@ -9,7 +9,6 @@ UPDATE rounds set balls = :balls WHERE round_number = :round_number;
 
 
 
-
 -- name: raw-select-bets
 SELECT * FROM bets;
 

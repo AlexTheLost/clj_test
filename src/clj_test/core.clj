@@ -156,9 +156,7 @@
         current_round_number (current-round-number? round_number current_state)]
     (when (and round_not_finished current_round_number)
       (raw-inser-bet! {:unique_number unique_number :round_number round_number :client_id client_id :selected_numbers selected_numbers :bet_amount bet_amount}))))
-(try-accept-bet 13 355124 1 "[1,2,3,100]" 100)
 ;; (try-accept-bet 102,355126,1,"[1,2,3,4,5,6,7,8,9,10]",100)
-(Integer/parseInt "1")
 
 
 (defn prepare-bet [bets_records]
